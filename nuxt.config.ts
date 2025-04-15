@@ -1,4 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
+import { config } from 'dotenv';
+config();
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
@@ -14,8 +16,15 @@ export default defineNuxtConfig({
   // Modules (use only @nuxtjs/seo to avoid redundancy)
   modules: [
     "@nuxtjs/seo",
-    "nuxt-aos",
+    "nuxt-aos"  
   ],
+
+
+  runtimeConfig: {
+    public: {
+      gtagId: process.env.GOOGLE_ANALYTICS_ID,
+    }
+  },
 
   // Site-wide SEO configuration
   site: {
