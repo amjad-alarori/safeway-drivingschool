@@ -55,8 +55,16 @@
   </template>
   
   <script setup>
-  // Geen extra logica nodig voor deze component.
+  useHead({
+    title: 'Leer Meer Over Veilig Rijden',
+    meta: [
+      { name: 'description', content: 'Ontdek nuttige informatie over rijlessen, rijexamens en veilig rijden in Nederland.' },
+      { property: 'og:title', content: 'Leer Meer Over Veilig Rijden' },
+      { property: 'og:description', content: 'Links en tips over veilig rijden, rijexamens en meer.' }
+    ]
+  })
   </script>
+  
   
   <style scoped>
   </style>

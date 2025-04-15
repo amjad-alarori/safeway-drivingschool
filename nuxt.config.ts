@@ -13,13 +13,28 @@ export default defineNuxtConfig({
     ],
   },
 
-  // Modules (use only @nuxtjs/seo to avoid redundancy)
-  modules: ["@nuxtjs/seo", "nuxt-aos", 'nuxt-gtag'],
-
+  modules: [
+    "@nuxtjs/seo", 
+    "@nuxtjs/sitemap",
+    "nuxt-aos", 
+    "nuxt-gtag"
+  ],
 
   gtag: {
     id: process.env.GOOGLE_ANALYTICS_ID
   },
+
+  sitemap: {
+    enabled: true,
+    gzip: true,
+    xsl: true,
+    credits: false,
+    defaults: {
+      changefreq: 'monthly',
+      priority: 0.8,
+    },
+  },
+  
 
   // Site-wide SEO configuration
   site: {
