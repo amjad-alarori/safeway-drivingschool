@@ -201,6 +201,11 @@
     message: ''
   });
   
+  // Import Vite environment variables
+  const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const userID = import.meta.env.VITE_EMAILJS_USER_ID;
+  
   // Send email using EmailJS
   const sendEmail = async () => {
     try {
@@ -211,11 +216,6 @@
       if (!emailjs) {
         throw new Error('EmailJS not loaded');
       }
-      
-      // Replace these with your actual EmailJS service details
-      const serviceID = 'service_8bd570j';
-      const templateID = 'template_jzvn8cj';
-      const userID = 'K7neSbFtCNZqiU4CK';
       
       // Prepare template parameters
       const templateParams = {
@@ -263,9 +263,42 @@
   
   // Meta tags for SEO
   useHead({
-    title: 'Contact - SafeWay Rijschool',
-    meta: [
-      { name: 'description', content: 'Neem contact op met SafeWay Rijschool voor rijlessen in Hoorn en Zaandam. Vul ons contactformulier in of bel ons direct.' }
-    ]
-  });
+  title: 'Contact - SafeWay Rijschool',
+  meta: [
+    { name: 'description', content: 'Neem contact op met SafeWay Rijschool voor rijlessen in Hoorn en Zaandam. Vul ons contactformulier in of bel ons direct.' },
+    
+    // OpenGraph meta tags
+    { property: 'og:title', content: 'Neem contact op met SafeWay Rijschool' },
+    { property: 'og:description', content: 'Contacteer ons voor rijlessen in Hoorn en Zaandam. Wij helpen je graag verder!' },
+    { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: 'https://www.safeway-rijschool.nl/contact' }, // Change to your actual contact page URL
+    { property: 'og:image', content: 'https://www.safeway-rijschool.nl/images/contact-og-image.jpg' },
+    { property: 'og:image:alt', content: 'Neem contact op met SafeWay Rijschool' },
+    { property: 'og:site_name', content: 'SafeWay Rijschool' },
+    { property: 'og:locale', content: 'nl_NL' },
+    { property: 'og:locale:alternate', content: 'en_US' },
+    { property: 'og:locale:alternate', content: 'ar_EG' },
+    { property: 'og:site_name', content: 'SafeWay Rijschool' },
+    { property: 'og:updated_time', content: new Date().toISOString() },
+    // Twitter Card (optional)
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Neem contact op met SafeWay Rijschool' },
+    { name: 'twitter:description', content: 'Contacteer ons voor rijlessen in Hoorn en Zaandam. Wij helpen je graag verder!' },
+    { property: 'og:image', content: 'https://www.safeway-rijschool.nl/images/contact-og-image.jpg' },
+    { name: 'twitter:image', content: 'https://www.safeway-rijschool.nl/images/contact-og-image.jpg' },
+    { name: 'twitter:image:alt', content: 'Neem contact op met SafeWay Rijschool' },
+    { name: 'twitter:site', content: '@safewayrijschool' },
+    { name: 'twitter:creator', content: '@safewayrijschool' },
+    { name: 'twitter:label1', content: 'Prijs' },
+    { name: 'twitter:data1', content: '€70 voor 90 minuten' },
+    { name: 'twitter:label2', content: 'Locatie' },
+    { name: 'twitter:data2', content: 'Hoorn & Zaandam' },
+    { name: 'twitter:label3', content: 'Contact' },
+    { name: 'twitter:data3', content: '+31 6 57157263' }
+  ],
+  link: [
+    { rel: 'canonical', href: 'https://www.safeway-rijschool.nl/contact' }
+  ]
+});
+
   </script>
