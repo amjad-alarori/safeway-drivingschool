@@ -7,7 +7,7 @@
             Over Mij
           </h2>
           <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
-            Hallo! Mijn naam is <strong>A. Alarori</strong> en ik ben jouw betrouwbare rijinstructeur bij SafeWay. Met jarenlange ervaring en een rustige, duidelijke aanpak help ik jou om je rijbewijs te halen op een manier die bij jou past.
+            Hallo! Mijn naam is <strong>Amjad Alarori</strong> en ik ben jouw betrouwbare rijinstructeur bij SafeWay. Met jarenlange ervaring en een rustige, duidelijke aanpak help ik jou om je rijbewijs te halen op een manier die bij jou past.
           </p>
           <p class="text-lg text-gray-600 dark:text-gray-300 mb-4">
             Of je nu gespannen bent of al wat ervaring hebt – samen zorgen we ervoor dat je zelfverzekerd en veilig de weg op gaat. Bij mij krijg je altijd les in jouw tempo, met focus op praktijk én vertrouwen.
@@ -21,7 +21,7 @@
         <div class="flex justify-center">
           <img
             src="assets/images/instructeur.jpg"
-            alt="Rijinstructeur A. Alarori"
+            alt="Rijinstructeur Amjad Alarori"
             class="w-80 h-80 object-cover rounded-2xl shadow-lg ring-4 ring-blue-100 dark:ring-blue-500"
           />
         </div>
