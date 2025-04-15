@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://safeway-rijschool.nl/sitemap.xml
