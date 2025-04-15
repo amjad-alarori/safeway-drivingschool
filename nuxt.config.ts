@@ -14,16 +14,11 @@ export default defineNuxtConfig({
   },
 
   // Modules (use only @nuxtjs/seo to avoid redundancy)
-  modules: [
-    "@nuxtjs/seo",
-    "nuxt-aos"  
-  ],
+  modules: ["@nuxtjs/seo", "nuxt-aos", 'nuxt-gtag'],
 
 
-  runtimeConfig: {
-    public: {
-      gtagId: process.env.GOOGLE_ANALYTICS_ID,
-    }
+  gtag: {
+    id: process.env.GOOGLE_ANALYTICS_ID
   },
 
   // Site-wide SEO configuration
