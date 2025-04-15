@@ -1,11 +1,12 @@
 <template>
   <div>
+    <Analytics/>
     <NuxtPage />
   </div>
 </template>
 
 <script setup>
-// Global script can go here
+import { Analytics } from '@vercel/analytics/nuxt'
 </script>
 
 <style>
