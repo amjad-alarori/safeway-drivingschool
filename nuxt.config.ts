@@ -11,54 +11,74 @@ export default defineNuxtConfig({
     ],
   },
 
+  // Modules (use only @nuxtjs/seo to avoid redundancy)
   modules: [
-    "nuxt-aos",
-    "@nuxtjs/robots",
-    "@nuxtjs/sitemap",
     "@nuxtjs/seo",
+    "nuxt-aos",
   ],
 
-  app: {
-    head: {
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
-    },
+  // Site-wide SEO configuration
+  site: {
+    url: 'https://www.safeway-rijschool.nl',
+    name: 'SafeWay Rijschool',
+    description: 'SafeWay Rijschool biedt professionele rijlessen om zelfverzekerd en veilig te rijden.', // ~150 chars
+    defaultLocale: 'nl',
   },
 
+  // Sitemap configuration
   sitemap: {
-    hostname: 'https://www.safeway-rijschool.nl/',
+    enabled: true,
     gzip: true,
-    routes: [
-      '/',
-      '/contact',
+  },
+
+  // Robots configuration
+  robots: {
+    enabled: true,
+    rules: [
+      {
+        userAgent: '*',
+        allow: '/',
+      },
     ],
   },
 
-  robots: {
-    UserAgent: '*',
-    Allow: '/',
-    Sitemap: 'https://www.safeway-rijschool.nl/sitemap.xml',
+  ogImage: {
+    enabled: true,
+    defaults: {
+      component: 'NuxtSeo',
+      props: {
+        siteName: 'SafeWay Rijschool',
+        title: 'SafeWay - Leer Veilig Rijden',
+        description: 'SafeWay Rijschool biedt professionele rijlessen om zelfverzekerd en veilig te rijden.',
+        image: '/assets/images/logo.jpg', 
+      },
+    },
   },
 
-  seo: {
-    baseUrl: 'https://www.safeway-rijschool.nl',
-    name: 'SafeWay Rijschool',
-    title: 'SafeWay - Leer Veilig Rijden',
-    description: 'SafeWay Rijschool biedt professionele rijlessen om u te helpen een zelfverzekerde en veilige bestuurder te worden.',
-    keywords: ['rijschool', 'rijlessen', 'autorijlessen', 'rijbewijs halen', 'rijinstructeur', 'rijopleiding', 'theorie-examen', 'praktijkexamen', 'autorijden leren', 'rijvaardigheid', 'rijschool Nederland', 'rijschool Amsterdam', 'rijschool Utrecht', 'rijschool Rotterdam', 'rijschool Den Haag', 'rijschool Eindhoven', 'rijschool Groningen', 'rijschool Tilburg', 'rijschool Almere', 'rijschool Breda'],
-    canonical: true,
-    openGraph: {
-      type: 'website',
-      site_name: 'SafeWay Rijschool',
-      images: [
+  // Schema.org configuration (global defaults)
+  schemaOrg: {
+    enabled: true,
+    defaults: {
+      '@type': 'WebSite',
+      name: 'SafeWay Rijschool',
+      url: 'https://www.safeway-rijschool.nl',
+    },
+  },
+
+  app: {
+    head: {
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+      title: 'SafeWay Rijschool - Professionele Rijlessen',
+      titleTemplate: '%s - SafeWay Rijschool',
+      htmlAttrs: {
+        lang: 'nl',
+      },
+      meta: [
         {
-          url: 'https://www.safeway-rijschool.nl/assets/images/logo.jpg',
-          width: 800,
-          height: 600,
-          alt: 'SafeWay Rijschool Logo',
+          name: 'keywords',
+          content: 'rijschool, rijlessen, autorijlessen, rijbewijs halen, rijinstructeur, rijopleiding, theorie-examen, praktijkexamen, autorijden leren, rijvaardigheid, rijschool Nederland, rijschool Amsterdam, rijschool Hoorn, rijschool Haarlem, rijschool Alkmaar, rijschool Purmerend, rijschool Zaandam, rijschool Zaanstad, rijschool Beverwijk, rijschool Heemskerk, rijschool Velsen, rijschool IJmuiden',
         },
       ],
     },
-    sitemap: true,
-    robots: true,
   },
 });
