@@ -10,9 +10,12 @@
           <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
             Zoek je rijlessen in <strong>Hoorn</strong> of <strong>Zaandam</strong>? Bij SafeWay krijg je persoonlijke en professionele begeleiding van een ervaren instructeur. We werken samen aan jouw rijbewijs op jouw tempo.
           </p>
-          <p class="text-xl font-semibold text-blue-600 dark:text-blue-400 mb-8">
-            🌟 Nu tijdelijk: 90 minuten rijles voor slechts <span class="underline">€70</span>!
-          </p>
+          <div class="relative inline-block mb-8">
+            <div class="absolute inset-0 bg-red-500 rounded-full blur-lg opacity-75"></div>
+            <p class="relative text-xl font-semibold text-white px-6 py-3 bg-red-600 rounded-full shadow-lg">
+              🌟 Nu tijdelijk: 90 minuten rijles voor slechts <span class="underline">€70</span>!
+            </p>
+          </div>
           <a
             href="/contact"
             class="inline-block bg-blue-600 hover:bg-blue-700 text-white dark:bg-blue-500 dark:hover:bg-blue-600 px-6 py-3 rounded-full text-lg font-semibold shadow-lg transition"
@@ -36,4 +39,3 @@
   <script setup>
   // geen logica nodig
   </script>
-  
