@@ -56,10 +56,10 @@
   
   <script setup>
   useHead({
-    title: 'Leer Meer Over Veilig Rijden',
+    title: 'SafeWay Rijschool - Rijlessen in Hoorn en Zaandam',
     meta: [
       { name: 'description', content: 'Ontdek nuttige informatie over rijlessen, rijexamens en veilig rijden in Nederland.' },
-      { property: 'og:title', content: 'Leer Meer Over Veilig Rijden' },
+      { property: 'og:title', content: 'SafeWay Rijschool - Rijlessen in Hoorn en Zaandam' },
       { property: 'og:description', content: 'Links en tips over veilig rijden, rijexamens en meer.' }
     ]
   })
@@ -68,4 +68,3 @@
   
   <style scoped>
   </style>
-  
