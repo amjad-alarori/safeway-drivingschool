@@ -40,6 +40,7 @@
   
       <div class="mt-10 border-t border-gray-300 dark:border-gray-700 pt-6 text-center text-sm text-gray-600 dark:text-gray-400">
         © {{ new Date().getFullYear() }} SafeWay Rijschool. Alle rechten voorbehouden.
+        <p class="text-sm mt-2">KvK-nummer: 95272666</p>
       </div>
     </footer>
   </template>
