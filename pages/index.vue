@@ -61,11 +61,27 @@ useHead({
     { name: 'icon', content: '/assets/images/favicon.ico' },
     { name: 'shortcut icon', content: '/assets/images/favicon.ico' },
     { name: 'manifest', content: '/assets/images/site.webmanifest' },
-    { name: 'description', content: 'Professionele en persoonlijke rijlessen in Hoorn en Zaandam. Bij SafeWay werken we samen aan jouw rijbewijs op jouw tempo.' },
+    { name: 'description', content: 'Op zoek naar rijlessen in Hoorn of Zaandam? SafeWay biedt professionele en persoonlijke rijlessen om je met vertrouwen je rijbewijs te laten halen. Tijdelijke aanbieding: 90 minuten rijles voor €80!' },
     { name: 'keywords', content: 'rijschool, rijlessen, Hoorn, Zaandam, veilig rijden, rijbewijs, autorijles' },
     { name: 'author', content: 'Amjad Alarori' },
     { name: 'language', content: 'Dutch' },
     { name: 'charset', content: 'UTF-8' },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      json: {
+        "@context": "https://schema.org",
+        "@type": "Offer",
+        "name": "90 minuten rijles voor €80",
+        "description": "SafeWay biedt een tijdelijke promotie voor rijlessen in Hoorn en Zaandam. Krijg een rijles van 90 minuten voor slechts €80!",
+        "price": "80",
+        "priceCurrency": "EUR",
+        "url": "https://safeway.com/contact",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2025-04-16"
+      }
+    }
   ]
 });
 </script>
