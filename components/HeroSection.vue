@@ -17,7 +17,7 @@
               🚗 Tijdelijk: <span class="underline">90 min rijles</span> voor <span class="text-yellow-200">€80</span>! 🎉
             </p>
             <a
-              href="/contact"
+              href="https://www.startmetjerijbewijs.nl/safeway-rijschool/inschrijven"
               class="mt-2 inline-block bg-yellow-200 hover:bg-yellow-300 text-red-700 font-semibold px-4 py-2 rounded-lg text-sm shadow-sm transition transform hover:scale-105"
             >
               Start vandaag

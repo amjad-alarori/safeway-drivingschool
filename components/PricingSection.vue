@@ -22,7 +22,7 @@
             <span class="text-3xl text-red-500 dark:text-red-400">€80</span> voor een <span class="underline">90-min</span> Rijles!
           </p>
           <a
-            href="/contact"
+            href="https://www.startmetjerijbewijs.nl/safeway-rijschool/inschrijven"
             class="inline-block bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-500 text-white font-bold px-6 py-3 rounded-lg text-base shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Grijp Deze Deal Nu!
@@ -54,7 +54,7 @@
             <li>✅ Gespreid betalen</li>
           </ul>
           <a
-            href="/contact"
+            href="https://www.startmetjerijbewijs.nl/safeway-rijschool/inschrijven"
             class="mt-4 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-6 py-2 rounded-lg text-sm shadow-md hover:shadow-lg transition-all duration-300"
           >
             Kies Nu!
@@ -83,7 +83,7 @@
             <li>✅ Gespreid betalen</li>
           </ul>
           <a
-            href="/contact"
+            href="https://www.startmetjerijbewijs.nl/safeway-rijschool/inschrijven"
             class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-2 rounded-lg text-sm shadow-md hover:shadow-lg transition-all duration-300"
           >
             Kies Nu!
@@ -95,7 +95,7 @@
           <div class="absolute -top-4 -left-4 bg-yellow-400 text-gray-900 text-sm font-bold px-4 py-2 rounded-full shadow-md animate-pulse">
             🎉 5% Korting
           </div>
-          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Ervaring Pakket</h3>
+          <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Ervaren Pakket</h3>
           <div class="flex items-baseline mb-4">
             <p class="text-4xl font-extrabold text-green-600 dark:text-green-400">€1188</p>
             <p class="text-lg text-gray-500 dark:text-gray-400 line-through ml-3">€1250</p>
@@ -109,7 +109,7 @@
             <li>✅ Gespreid betalen</li>
           </ul>
           <a
-            href="/contact"
+            href="https://www.startmetjerijbewijs.nl/safeway-rijschool/inschrijven"
             class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white font-bold px-6 py-2 rounded-lg text-sm shadow-md hover:shadow-lg transition-all duration-300"
           >
             Kies Nu!
@@ -131,7 +131,7 @@
             <li>✅ Direct in te plannen</li>
           </ul>
           <a
-            href="/contact"
+            href="https://www.startmetjerijbewijs.nl/safeway-rijschool/inschrijven"
             class="mt-4 inline-block bg-yellow-600 hover:bg-yellow-700 text-white font-bold px-6 py-2 rounded-lg text-sm shadow-md hover:shadow-lg transition-all duration-300"
           >
             Kies Nu!
